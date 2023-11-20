@@ -1,13 +1,17 @@
 import React from 'react'
-import logo from 'calc-app/images/logo.svg'
+import Header from './Components/Header'
+import Body from './Components/Body'
+import CalcTotal from './Components/CalcTotal'
 
 
 export default function App() {
   return (
-    <div>
-        <header>
-            <img src={logo} alt="Description of the image"></img>
-        </header>
+    <div className="app-container">
+        <Header />
+        <Body />
+        <CalcTotal/>
     </div>
   )
+
+
 }
